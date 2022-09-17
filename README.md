@@ -1,18 +1,21 @@
-# vue-upload-oss
+# vue-sheep
 ## 前言
-原掘金文章[Vue前端直传至阿里云OSS（支持断点续传，分片上传，批量上传）](https://juejin.cn/post/7077751294223450143),因为没有完整版本，使用起来有些吃力，看到留言需要完整demo,今天抽空写了一份完整的源码
+本项目使用 vue2 + nodejs实现羊了个羊快速通关，仅为学习使用，请勿使用本程序恶意对游戏服务器持续造成压力，一切后果自负！！！t 参数包含个人信息，任何情况请勿泄漏
+
+工具推荐：Fiddler/HTTPDebugger/Charles【PC】、HttpCarry【Android】、Stream【iphone】
 
 ## 特性
-- 支持Vue2
-- 批量上传
-- 分片、断点续传
+- 支持在线填写抓包参数
+- 支持随机生成时间和自定义时间
+- 最大支持10次通关，可以根据自己需求更改，切勿滥用
+
 
 ## 使用
 ```shell
 # 拷贝代码
-git clone https://github.com/hu-snail/vue-upload-oss.git
+git clone https://github.com/hu-snail/vue-sheep.git
 # 进入项目
-cd vue-upload-oss
+cd vue-sheep
 # 安装依赖
 yarn # or npm i
 # 运行
@@ -20,8 +23,4 @@ yarn serve
 ```
 
 ## 预览截图
-- 校验STS凭证
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c97f0967acbf464bb5b1f4ea382f6f9e~tplv-k3u1fbpfcp-watermark.image?)
-
-- 上传文件
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/121d9d4b4cb7453f87fe7fd191b7ed13~tplv-k3u1fbpfcp-watermark.image?)
+![page.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ccdecabc046f4d1194867d90e2fec170~tplv-k3u1fbpfcp-watermark.image?)

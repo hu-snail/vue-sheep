@@ -1,8 +1,8 @@
 import request from '@/utils/request'
 
-export function getToken(params) {
+export function getPassApi(params) {
     return request({
-      url: '/getToken/',
+      url: '/pass',
       method: 'get',
       params,
     })

@@ -5,7 +5,7 @@ const SUCCESS_CODE = 200
 
 const instance = axios.create({
   baseURL: 'http://localhost:5000',
-  timeout: 10 * 1000,
+  timeout: 50 * 1000,
   headers: {
     'Content-Type': 'application/json;charset=UTF-8',
   },

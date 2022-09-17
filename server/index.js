@@ -38,8 +38,8 @@ app.get("/pass",async function(req, res){
     console.log(`第${pass_index}关准备就绪...`)
    
     try {
-        const { userAgent, t, rankTime } = req.query
-        console.log(`时间${rankTime}`)
+        const { userAgent, t, rankTime, timeType } = req.query
+        if (timeType == 1) console.log(`随机生成时间${rankTime}s`)
         const resData = await axios.get(game_over_api, {
             headers: {
                 "Host": host,

@@ -128,19 +128,22 @@ export default {
         this.timer = null
         return
       }
-      if (index < num) this.formInline.index ++
-      let time = null
-      if (timeType === 1) time =(Math.floor(Math.random() * 10) + 3) * 100
-      else time = rankTime
-      await getPassApi({
-        userAgent,
-        t,
-        rankTime: time
-      }).then(() => {
+      if (index < num) {
+        this.formInline.index ++
+        let time = null
+        if (timeType === 1) time =(Math.floor(Math.random() * 10) + 3) * (Math.floor(Math.random() * 30) + 20)
+        else time = rankTime
+        await getPassApi({
+          userAgent,
+          t,
+          rankTime: time,
+          timeType
+        }).then(() => {
           this.formInline.passNum ++
         }).catch(() => {
           this.formInline.unpassNum ++
         })
+      }
     },
 
    getPass() {
